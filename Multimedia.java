@@ -20,7 +20,9 @@ public class Multimedia extends Post
 
     public String getPost()
     {
-        return("(" + archivo.getTipo() + ") " + link + "\n" + archivo.play());
+        return("(" + archivo.getTipo() + ") " + link + 
+                "\n" + archivo.getInfo() + 
+                "\n" +  archivo.play());
     }
 
     public Archivo getArchivo()
