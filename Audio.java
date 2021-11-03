@@ -8,10 +8,10 @@
 
 public class Audio extends Archivo 
 {
-    private float Srate;
+    private double Srate;
     private int Bdepth;
 
-    public Audio(int kb, float s, int b) 
+    public Audio(int kb, Double s, int b) 
     {
         super(kb);
         this.tipo = "audio";
@@ -26,7 +26,7 @@ public class Audio extends Archivo
 
     public String play()
     { 
-        return("Voy a sonar este audio con " + Srate + " kHz de sample rate y " + Bdepth + "de bit depth");
+        return("Voy a sonar este audio con " + Srate + " kHz de sample rate y " + Bdepth + " de bit depth");
     }
     
 }

@@ -9,19 +9,19 @@
 public class Imagen extends Archivo 
 {
     private String formato;
-    private String resolucion;
+    private int resolucion;
 
-    public Imagen(int kb, String f, String r) 
+    public Imagen(int kb, String f, int r) 
     {
         super(kb);
-        this.tipo = "Imagen";
+        this.tipo = "imagen";
         formato = f;
         resolucion = r;
     }
 
     public String getInfo()
     {
-        return(kilobytes + "KB, " + formato + " " + resolucion + " Megapíxeles");
+        return(kilobytes + " KB, " + formato + ", " + resolucion + " Megapíxeles");
     }
 
     public String play()

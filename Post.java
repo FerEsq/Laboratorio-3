@@ -14,13 +14,12 @@ import java.util.Arrays;
 
 public abstract class Post
 {
-    Vista vista = new Vista();
+    private Vista vista = new Vista();
 
     protected String autor;
     protected String fecha;
     protected String hora;
     protected int likes;
-    protected int maximo;
     protected ArrayList<String> hashtags;
     protected ArrayList<String> comentarios;
 
@@ -30,7 +29,6 @@ public abstract class Post
         this.fecha = f;
         this.hora = h; 
         this.likes = l;
-        maximo = 140;
         hashtags = new ArrayList<String>();
         comentarios = new ArrayList<String>();
     }
@@ -39,13 +37,13 @@ public abstract class Post
 
     public void setComentario(String c) 
     {
-        if (c.length() <= maximo)
+        if (c.length() <= 140) //máximo de cáracteres
         {
             comentarios.add(c);
         }
         else
         {
-            vista.mostrarError();
+            vista.mostrarLimite();
         } 
     }
 
@@ -79,11 +77,6 @@ public abstract class Post
     public int getLikes()
     {
         return likes;
-    }
-
-    public int getMaximo()
-    {
-        return maximo;
     }
 
     public ArrayList<String> getHashtags()
