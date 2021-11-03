@@ -17,7 +17,10 @@ public class Multimedia extends Post
         archivo = ac;
         link = lk;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getPost()
     {
         return("(" + archivo.getTipo() + ") " + link + 
@@ -25,6 +28,9 @@ public class Multimedia extends Post
                 "\n" +  archivo.play());
     }
 
+    /** 
+     * @return Archivo
+     */
     public Archivo getArchivo()
     { 
         return archivo;

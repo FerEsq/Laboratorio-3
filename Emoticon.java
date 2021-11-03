@@ -16,6 +16,9 @@ public class Emoticon extends Post
         emoji = e;
     }
 
+    /** 
+     * @return String
+     */
     public String getPost()
     {
         return("(emoticón) " + emoji);

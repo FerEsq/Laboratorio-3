@@ -166,7 +166,10 @@ public class Vista
         op = scan.nextInt();
         return op;
     }
-
+    
+    /** 
+     * @param p
+     */
     public void mostrarPost(Post p)
     {
         System.out.println(p.getAutor() + ". " + p.getFecha() + ":" + p.getHora() + " likes:" + p.getLikes());
@@ -192,7 +195,10 @@ public class Vista
             }
         }
     }
-
+    
+    /** 
+     * @param ps
+     */
     public void mostrarEncabezados(ArrayList<Post> ps)
     {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

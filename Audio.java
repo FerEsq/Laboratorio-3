@@ -18,12 +18,18 @@ public class Audio extends Archivo
         Srate = s;
         Bdepth = b;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getInfo()
     {
         return(kilobytes + "KB, Samplerate: " + Srate + " kHz BitDepth: " + Bdepth);
     }
-
+    
+    /** 
+     * @return String
+     */
     public String play()
     { 
         return("Voy a sonar este audio con " + Srate + " kHz de sample rate y " + Bdepth + " de bit depth");

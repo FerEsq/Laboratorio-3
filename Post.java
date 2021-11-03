@@ -32,9 +32,15 @@ public abstract class Post
         hashtags = new ArrayList<String>();
         comentarios = new ArrayList<String>();
     }
-
+    
+    /** 
+     * @return String
+     */
     public abstract String getPost();
 
+    /** 
+     * @param c
+     */
     public void setComentario(String c) 
     {
         if (c.length() <= 140) //máximo de cáracteres
@@ -46,7 +52,10 @@ public abstract class Post
             vista.mostrarLimite();
         } 
     }
-
+    
+    /** 
+     * @param hs
+     */
     public void setHashtags(String hs)
     {
         String str[] = hs.split(",");
@@ -58,32 +67,50 @@ public abstract class Post
     {
         likes++;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getAutor()
     {
         return autor;
     }
 
+    /** 
+     * @return String
+     */
     public String getFecha()
     {
         return fecha;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getHora()
     {
         return hora;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getLikes()
     {
         return likes;
     }
 
+    /** 
+     * @return ArrayList<String>
+     */
     public ArrayList<String> getHashtags()
     {
         return hashtags;
     }
-
+    
+    /** 
+     * @return ArrayList<String>
+     */
     public ArrayList<String> getComentarios()
     {
         return comentarios;

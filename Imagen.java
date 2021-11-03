@@ -18,12 +18,18 @@ public class Imagen extends Archivo
         formato = f;
         resolucion = r;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getInfo()
     {
         return(kilobytes + " KB, " + formato + ", " + resolucion + " Megapíxeles");
     }
 
+    /** 
+     * @return String
+     */
     public String play()
     { 
         return("Estoy mostrando esta imagen con " + resolucion + " megapíxeles de resolución");

@@ -15,7 +15,10 @@ public class Texto extends Post
         super(a, f, h, l);
         mensaje = m;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getPost()
     {
         return("(texto) " + mensaje);

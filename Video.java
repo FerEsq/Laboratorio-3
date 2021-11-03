@@ -17,11 +17,17 @@ public class Video extends Archivo
         Frate = f;
     }
 
+    /** 
+     * @return String
+     */
     public String getInfo()
     {
         return(kilobytes + "KB, FrameRate: " + Frate + " fps");
     }
 
+    /** 
+     * @return String
+     */
     public String play()
     { 
         return("Voy a mostrar este video con " + Frate + " fps");

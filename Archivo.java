@@ -15,10 +15,22 @@ public abstract class Archivo
     {
         this.kilobytes = kb;
     }
-
+    
+    /** 
+     * @param getTipo(
+     * @return String
+     */
     public abstract String getInfo();
+    
+    /** 
+     * @param getTipo(
+     * @return String
+     */
     public abstract String play();
 
+    /** 
+     * @return String
+     */
     public String getTipo()
     { 
         return tipo;
