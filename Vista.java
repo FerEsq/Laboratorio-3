@@ -21,11 +21,12 @@ public class Vista
     //Mensaje de bienvenida
     public void mostrarInicio()
     {
-        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("     ✦ Bienvenid@ la red social “QueOndaMano” ✦ \n");
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("        ✦ Bienvenid@ la red social “QueOndaMano” ✦ \n");
 		System.out.println(" - Publica texto, multimedia y emoticonos");
         System.out.println(" - Dale like, comenta y filtra tus posts favoritos!");
-		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        System.out.println(" * Si el programa parece congelarse, presiona enter de nuevo");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     }
 
     //Mensaje de despedida
@@ -212,7 +213,7 @@ public class Vista
 
     public void separar()
     {
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
     public void vistaPrevia()
